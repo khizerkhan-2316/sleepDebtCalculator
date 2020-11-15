@@ -99,7 +99,7 @@ const display = () => {
   hide("sundayBox");
   show("confirmInputs");
   document.getElementById("header").innerHTML =
-    "What is you ideal amount of sleep in a week?";
+    "What is you ideal amount of sleep for a day";
 
   show("header");
 };

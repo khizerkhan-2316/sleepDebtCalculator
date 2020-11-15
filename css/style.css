@@ -70,8 +70,12 @@ html {
 
 .startCalculatorr button {
   padding: 5px 30px;
-  background-color: green;
+
   font-family: var(--main-button-font);
+}
+
+.startCalculatorr button:hover {
+  background-color: gray;
 }
 
 .calculator-mainframe {
@@ -137,4 +141,18 @@ html {
 .main-input-container h4 {
   color: white;
   font-family: var(--main-header-font);
+}
+
+.description {
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.description p {
+  color: white;
+  font-family: var(--main-text-font);
+  text-align: center;
 }
