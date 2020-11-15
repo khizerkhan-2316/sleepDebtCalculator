@@ -10,6 +10,98 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="mainframe-container">
+      <div class="mainframe" id="startMainframe">
+        <div class="heading">
+          <h2>Sleep Debt Collector</h2>
+        </div>
+        <div class="startCalculatorr">
+          <button id="ctaStart">Start</button>
+        </div>
+      </div>
+      <div class="calculator-mainframe" id="calcMF">
+        <div class="heading">
+          <h4 id="header">What are the actual hours of sleep you get per day?</h4>
+        </div>
+        <div class="main-input-container" id="Mondaybox">
+          <div class="input">
+            <input type="text" placeholder="Monday..." id="monday" />
+            <button id="confirmMonday">Confirm</button>
+          </div>
+        </div>
+        <div class="main-input-container" id="tuesdayBox">
+          <div class="input">
+            <input type="text" placeholder="Tuesday..." id="tuesday" />
+            <button id="confirmTuesday">Confirm</button>
+          </div>
+        </div>
+
+        <div class="main-input-container" id="wednesdayBox">
+          <div class="input">
+            <input type="text" placeholder="Wednesday..." id="wednesday" />
+            <button id="confirmWednesday">Confirm</button>
+          </div>
+        </div>
+
+        <div class="main-input-container" id="thursdayBox">
+          <div class="input">
+            <input type="text" placeholder="Thursday..." id="thursday" />
+            <button id="confirmThursday">Confirm</button>
+          </div>
+        </div>
+        <div class="main-input-container" id="fridayBox">
+          <div class="input">
+            <input type="text" placeholder="Friday..." id="friday" />
+            <button id="confirmFriday">Confirm</button>
+          </div>
+        </div>
+
+        <div class="main-input-container" id="saturdayBox">
+          <div class="input">
+            <input type="text" placeholder="Saturday..." id="saturday" />
+            <button id="confirmSaturday">Confirm</button>
+          </div>
+        </div>
+
+        <div class="main-input-container" id="sundayBox">
+          <div class="input">
+            <input type="text" placeholder="Sunday..." id="sunday" />
+            <button id="confirmSunday">Confirm</button>
+          </div>
+        </div>
+
+        <div class="main-input-container" id="confirmInputs">
+            <div class="input">
+              <input type="text" placeholder="Ideal sleep in a week..." id="idealSleeping" />
+              <button id="confirmIdealSleep">Confirm</button>
+            </div>
+          </div>
+
+          <div class="main-input-container" id="showResult">
+            <div class="output">
+            <p>Ideal sleep:</p>
+            <p>Actually sleep:</p>
+            <p id="idealSleep"></p>
+            <p id="actualSleep"></p>
+            
+            <button id="finalConfirm">Calculate</button>
+
+            </div>
+            
+          </div>
+
+          <div class="main-input-container" id="finalContainer">
+            <div class="input">
+              <h4 id="finalResult"></h4>  
+
+            </div>
+          </div>
+
+
+            
+        </div>
+      </div>
+    </div>
     <script src="js/script.js" async defer></script>
   </body>
 </html>
