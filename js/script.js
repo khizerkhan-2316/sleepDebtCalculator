@@ -11,9 +11,6 @@ let array = [
 ];
 
 const getSleepHours = (day) => {
-  if (typeof day !== "string") {
-    console.log("You must enter a number");
-  }
   let days = day.toLowerCase();
   let result = [];
   switch (days) {
@@ -115,7 +112,27 @@ const confirmDetails = () => {
   show("header");
 };
 // onclick functions:
+let error = document.createElement("P");
 
+const controlstructure = () => {
+  let input1 = parseInt(document.getElementsByClassName("inputField").value);
+  error.innerHTML = "";
+  if (
+    input1 > 24 ||
+    input1 <= 0 ||
+    input1 === "" ||
+    typeof input1 !== "number" ||
+    input1 === null
+  ) {
+    error.innerHTML =
+      "You must enter a valid input. Unvalid inputs are: 0 or less, more than 24, no input at all or strings";
+
+    document.getElementById("test").appendChild(error);
+  } else {
+    hide("Mondaybox");
+    show("tuesdayBox");
+  }
+};
 const hide = (element) => {
   document.getElementById(element).style.display = "none";
 };
@@ -129,11 +146,11 @@ document.getElementById("ctaStart").onclick = function () {
 };
 
 document.getElementById("confirmMonday").onclick = function () {
-  hide("Mondaybox"), show("tuesdayBox");
+  controlstructure();
 };
 
 document.getElementById("confirmTuesday").onclick = function () {
-  hide("tuesdayBox"), show("wednesdayBox");
+  controlstructure(), hide("tuesdayBox"), show("wednesdayBox");
 };
 
 document.getElementById("confirmWednesday").onclick = function () {
